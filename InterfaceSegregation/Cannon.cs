@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregation
 {
-    public class Cannon : IPrinter
+    public class Cannon : IPrinter, IFaxContent
     {
         public void PrintGrey(string content)
         {
@@ -17,10 +17,10 @@ namespace InterfaceSegregation
             Console.WriteLine("Cannon jet print color");
         }
         //in this printer we can't scan
-        public void Scan(string content)
-        {
-            throw new NotImplementedException();
-        }
+        //public void Scan(string content)
+        //{
+        //    throw new NotImplementedException();
+        //}
         public void Fax(string content)
         {
             Console.WriteLine("Cannon print fax");

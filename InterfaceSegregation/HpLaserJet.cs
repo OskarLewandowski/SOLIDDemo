@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregation
 {
-    public class HpLaserJet : IPrinter
+    public class HpLaserJet : IPrinter, IFaxContent, IScanner
     {
         public void PrintGrey(string content)
         {
