@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DependencyInversion
 {
-    public class EmailNotyfication : INotyficationSender
+    public class SmsNotyfication : INotyficationSender
     {
         public void SendNotyfication(User user)
         {
-            Console.WriteLine($"Sending notification to user: {user.Name}");
+            Console.WriteLine($"Sending sms notification to {user.Name}");
         }
     }
 }

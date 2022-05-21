@@ -8,12 +8,18 @@ namespace DependencyInversion
 {
     public class AuthenticationManager
     {
+        private INotyficationSender notyficationSender;
+
+        public AuthenticationManager(INotyficationSender notyficationSender)
+        {
+            this.notyficationSender = notyficationSender;
+        }
+
         public void Authentication(User user, string email, string password)
         {
             if (user.Email == email && user.Password == password)
             {
-                EmailNotyfication emailNotyfication = new EmailNotyfication();
-                emailNotyfication.SendNotyfication(user);
+                notyficationSender.SendNotyfication(user);
             }
         }
     }
