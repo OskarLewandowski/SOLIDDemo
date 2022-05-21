@@ -10,7 +10,7 @@ namespace DependencyInversion
     {
         public void SendNotyfication(User user)
         {
-            Console.WriteLine($"Sending notification to user: {user.Name}");
+            Console.WriteLine($"Sending email notification to user: {user.Name}");
         }
     }
 }
