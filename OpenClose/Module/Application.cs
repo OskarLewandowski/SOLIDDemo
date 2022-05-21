@@ -12,29 +12,30 @@ namespace OpenClose.Module
         {
             for (int i = 0; i < shapes.Count; i++)
             {
-                ShapeType type = shapes[i].ShapeType;
+                shapes[i].Render();
+                //ShapeType type = shapes[i].ShapeType;
 
-                switch (type)
-                {
-                    case ShapeType.Circle:
-                        RenderCircle((Circle)shapes[i]);
-                        break;
-                    case ShapeType.Rectangle:
-                        RenderRectangle((Rectangle)shapes[i]);
-                        break;
-                }
+                //switch (type)
+                //{
+                //    case ShapeType.Circle:
+                //        RenderCircle((Circle)shapes[i]);
+                //        break;
+                //    case ShapeType.Rectangle:
+                //        RenderRectangle((Rectangle)shapes[i]);
+                //        break;
+                //}
             }
         }
 
-        private void RenderCircle(Circle circle)
-        {
-            Console.WriteLine("Render circle...");
-        }
+        //private void RenderCircle(Circle circle)
+        //{
+        //    Console.WriteLine("Render circle...");
+        //}
 
-        private void RenderRectangle(Rectangle circle)
-        {
-            Console.WriteLine("Render rectangle...");
-        }
+        //private void RenderRectangle(Rectangle circle)
+        //{
+        //    Console.WriteLine("Render rectangle...");
+        //}
 
     }
 }

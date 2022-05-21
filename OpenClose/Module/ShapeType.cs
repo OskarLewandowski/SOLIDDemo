@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OpenClose.Module
 {
-    public enum ShapeType
-    {
-        Circle,
-        Rectangle
-    }
+    //public enum ShapeType
+    //{
+    //    Circle,
+    //    Rectangle
+    //}
     public class Point
     {
         public int X { get; set; }
@@ -19,13 +19,22 @@ namespace OpenClose.Module
 
     public class Shape
     {
-        public ShapeType ShapeType { get; set; }
+        public virtual void Render()
+        {
+
+        }
+        //public ShapeType ShapeType { get; set; }
     }
 
     public class Circle : Shape
     {
         public int Radius { get; set; }
         public Point Center { get; set; }
+
+        public override void Render()
+        {
+            Console.WriteLine("Render circle...");
+        }
     }
 
     public class Rectangle : Shape
@@ -33,5 +42,10 @@ namespace OpenClose.Module
         public int Width { get; set; }
         public int Height { get; set; }
         public Point TopLeft { get; set; }
+
+        public override void Render()
+        {
+            Console.WriteLine("Render rectangle...");
+        }
     }
 }
