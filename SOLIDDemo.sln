@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDDemo", "SOLIDDemo\SOLI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibility", "SingleResponsibility\SingleResponsibility.csproj", "{35B81D05-FA14-4E83-9A16-C0D602A73435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClose", "OpenClose\OpenClose.csproj", "{C31DBACF-F71F-47B1-8F61-80EC2B3FFE2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{35B81D05-FA14-4E83-9A16-C0D602A73435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35B81D05-FA14-4E83-9A16-C0D602A73435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35B81D05-FA14-4E83-9A16-C0D602A73435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31DBACF-F71F-47B1-8F61-80EC2B3FFE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31DBACF-F71F-47B1-8F61-80EC2B3FFE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31DBACF-F71F-47B1-8F61-80EC2B3FFE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31DBACF-F71F-47B1-8F61-80EC2B3FFE2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
