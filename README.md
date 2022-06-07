@@ -1,4 +1,4 @@
-# SOLIDDemo:
+# SOLIDDemo [My Learning]
 Examples of use SOLID principle:
 - Single Responsibility Principle
 - Open Close Principle 
